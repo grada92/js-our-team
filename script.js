@@ -64,7 +64,7 @@ for(teamIndex = 0; teamIndex < team.length;teamIndex ++){
     const value = team[teamIndex];
     console.log('nome' + ' ' + value.name);
     console.log('rule' + ' ' + value.rule);
-    console.log('img' + ' ' + value.profile);
+    console.log('img' + ' ' + value["img-profile"]);
     
 
 }
