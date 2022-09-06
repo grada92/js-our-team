@@ -16,16 +16,42 @@ Stampare le stesse informazioni su
 DOM sottoforma di stringhe
 */
 
-const array = [
+// Creo array con informazioni del team
+const team = [
     {
     'name' : 'Wayne Barnett',
     'rule' : 'Founder & CEO',
-    'img' : 
+    'profile' : 'img/wayne-barnett-founder-ceo.jpg',
+    
+    },
 
+    {
+    'name' : 'Angela Caroll',
+    'rule' : 'Chief Editor',
+    
+    },
 
+    {
+    'name' : 'Walter Gordon',
+    'rule' : 'Office Manager',
+        
+    },
 
-    }
+    {
+    'name' : 'Angela Lopez',
+    'rule' : 'Social Media Manager',
+            
+    },
 
+    {
+    'name' : 'Scott Estrada',
+    'rule' : 'Developer',
+                
+    },
 
-
-]
+    {
+    'name' : 'Barbara Ramos',
+    'rule' : 'Graphic Designer',
+                
+    },
+];
