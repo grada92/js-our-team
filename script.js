@@ -21,50 +21,65 @@ const team = [
     {
     'name' : 'Wayne Barnett',
     'rule' : 'Founder & CEO',
-    'img-profile' : 'img/wayne-barnett-founder-ceo.jpg',
+    'imgProfile' : 'img/wayne-barnett-founder-ceo.jpg',
     },
     
     {
     'name' : 'Angela Caroll',
     'rule' : 'Chief Editor',
-    'img-profile' : 'img/angela-caroll-chief-editor.jpg',
+    'imgProfile' : 'img/angela-caroll-chief-editor.jpg',
     
     },
 
     {
     'name' : 'Walter Gordon',
     'rule' : 'Office Manager',
-    'img-profile' : 'img/walter-gordon-office-manager.jpg',
+    'imgProfile' : 'img/walter-gordon-office-manager.jpg',
         
     },
 
     {
     'name' : 'Angela Lopez',
     'rule' : 'Social Media Manager',
-    'img-profile' : 'img/angela-lopez-social-media-manager.jpg',
+    'imgProfile' : 'img/angela-lopez-social-media-manager.jpg',
          
     },
 
     {
     'name' : 'Scott Estrada',
     'rule' : 'Developer',
-    'img-profile' : 'img/scott-estrada-developer.jpg',
+    'imgProfile' : 'img/scott-estrada-developer.jpg',
               
     },
 
     {
     'name' : 'Barbara Ramos',
     'rule' : 'Graphic Designer',
-    'img-profile' : 'img/barbara-ramos-graphic-designer.jpg',
+    'imgProfile' : 'img/barbara-ramos-graphic-designer.jpg',
          
     },
 ];
 
-for(teamIndex = 0; teamIndex < team.length;teamIndex ++){
-    const value = team[teamIndex];
-    console.log('nome' + ' ' + value.name);
-    console.log('rule' + ' ' + value.rule);
-    console.log('img' + ' ' + value["img-profile"]);
+
+
+for(let index = 0; index < team.length; index++) {
+
+    const teamMember = team[index];
+    console.log(teamMember.name);
+    console.log(teamMember.rule);
+    console.log(teamMember.imgProfile);
+
+    const userMembers = document.createElement("div");
+    const row = document.querySelector(".user").append(userMembers);
+    
+    //Collego in Html le informazioni
+   userMembers.innerHTML += ` <img src="${teamMember.imgProfile}" class="img-fluid pt-3"> `
+   userMembers.innerHTML += ` <div> ${teamMember.name} </div> ` 
+   userMembers.innerHTML += ` <div> ${teamMember.rule} </div> ` 
+   userMembers.className = "col-2 mx-3";
+
     
 
 }
+
+
