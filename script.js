@@ -21,37 +21,50 @@ const team = [
     {
     'name' : 'Wayne Barnett',
     'rule' : 'Founder & CEO',
-    'profile' : 'img/wayne-barnett-founder-ceo.jpg',
-    
+    'img-profile' : 'img/wayne-barnett-founder-ceo.jpg',
     },
-
+    
     {
     'name' : 'Angela Caroll',
     'rule' : 'Chief Editor',
+    'img-profile' : 'img/angela-caroll-chief-editor.jpg',
     
     },
 
     {
     'name' : 'Walter Gordon',
     'rule' : 'Office Manager',
+    'img-profile' : 'img/walter-gordon-office-manager.jpg',
         
     },
 
     {
     'name' : 'Angela Lopez',
     'rule' : 'Social Media Manager',
-            
+    'img-profile' : 'img/angela-lopez-social-media-manager.jpg',
+         
     },
 
     {
     'name' : 'Scott Estrada',
     'rule' : 'Developer',
-                
+    'img-profile' : 'img/scott-estrada-developer.jpg',
+              
     },
 
     {
     'name' : 'Barbara Ramos',
     'rule' : 'Graphic Designer',
-                
+    'img-profile' : 'img/barbara-ramos-graphic-designer.jpg',
+         
     },
 ];
+
+for(teamIndex = 0; teamIndex < team.length;teamIndex ++){
+    const value = team[teamIndex];
+    console.log('nome' + ' ' + value.name);
+    console.log('rule' + ' ' + value.rule);
+    console.log('img' + ' ' + value.profile);
+    
+
+}
