@@ -20,41 +20,41 @@ DOM sottoforma di stringhe
 const team = [
     {
     'name' : 'Wayne Barnett',
-    'rule' : 'Founder & CEO',
+    'role' : 'Founder & CEO',
     'imgProfile' : 'img/wayne-barnett-founder-ceo.jpg',
     },
     
     {
     'name' : 'Angela Caroll',
-    'rule' : 'Chief Editor',
+    'role' : 'Chief Editor',
     'imgProfile' : 'img/angela-caroll-chief-editor.jpg',
     
     },
 
     {
     'name' : 'Walter Gordon',
-    'rule' : 'Office Manager',
+    'role' : 'Office Manager',
     'imgProfile' : 'img/walter-gordon-office-manager.jpg',
         
     },
 
     {
     'name' : 'Angela Lopez',
-    'rule' : 'Social Media Manager',
+    'role' : 'Social Media Manager',
     'imgProfile' : 'img/angela-lopez-social-media-manager.jpg',
          
     },
 
     {
     'name' : 'Scott Estrada',
-    'rule' : 'Developer',
+    'role' : 'Developer',
     'imgProfile' : 'img/scott-estrada-developer.jpg',
               
     },
 
     {
     'name' : 'Barbara Ramos',
-    'rule' : 'Graphic Designer',
+    'role' : 'Graphic Designer',
     'imgProfile' : 'img/barbara-ramos-graphic-designer.jpg',
          
     },
@@ -66,7 +66,7 @@ for(let index = 0; index < team.length; index++) {
 
     const teamMember = team[index];
     console.log(teamMember.name);
-    console.log(teamMember.rule);
+    console.log(teamMember.role);
     console.log(teamMember.imgProfile);
 
     const userMembers = document.createElement("div");
@@ -75,7 +75,7 @@ for(let index = 0; index < team.length; index++) {
     //Collego in Html le informazioni
    userMembers.innerHTML += ` <img src="${teamMember.imgProfile}" class="img-fluid pt-3"> `
    userMembers.innerHTML += ` <div> ${teamMember.name} </div> ` 
-   userMembers.innerHTML += ` <div> ${teamMember.rule} </div> ` 
+   userMembers.innerHTML += ` <div> ${teamMember.role} </div> ` 
    userMembers.className = "col-2 mx-3";
 
     
